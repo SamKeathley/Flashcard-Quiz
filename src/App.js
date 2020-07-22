@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
+import FlashcardList from './FlashcardList';
 
 function App() {
+  const [flashcards, setFlashcards] = useState(SAMPLE_FLASHCARDS);
+
   return (
-    <h1>Howdy, Earth.</h1>
+    <FlashcardList flashcards={flashcards} />
   );
 }
 
